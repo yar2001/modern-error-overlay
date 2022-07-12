@@ -15,7 +15,7 @@ const errors: OverlayError[] = [];
 let isOpen = false;
 let selectedError = 0;
 
-export function addError(err: OverlayError) {
+export function addErrorToOverlay(err: OverlayError) {
   errors.push(err);
   if (errors.length === 1) {
     isOpen = true;
@@ -74,7 +74,7 @@ command$.pipe(filter((v) => v === 'close')).subscribe(() => {
   );
 });
 
-import { mockError } from './mock';
-addError(mockError);
-addError(mockError);
-addError(mockError);
+// import { mockError } from './mock';
+// addErrorToOverlay(mockError);
+// addErrorToOverlay(mockError);
+// addErrorToOverlay(mockError);
