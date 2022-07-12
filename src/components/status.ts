@@ -7,7 +7,7 @@ export function ErrorStatusHtml(errorNum: number) {
   return html`
     <button
       id="error-overlay-open-button"
-      class="fixed bottom-4 left-4 z-[9000] py-2 pl-4 pr-5 bg-red-400 active:bg-red-500 shadow-xl text-white rounded-lg hover:scale-110 transition-all flex items-center space-x-1"
+      class="cursor-pointer border-none fixed bottom-4 left-4 z-[9000] py-2 pl-4 pr-5 bg-red-400 active:bg-red-500 shadow-xl text-white rounded-lg hover:scale-110 transition-all flex items-center space-x-1"
     >
       <svg
         class="w-7 h-7 fill-white inline-block"

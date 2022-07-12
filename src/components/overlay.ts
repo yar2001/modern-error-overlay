@@ -17,9 +17,9 @@ export function ErrorOverlayHtml(errors: OverlayError[], selectedError: number) 
                 id="error-overlay-back-button"
                 class="${selectedError === 0
                   ? 'bg-red-200 cursor-not-allowed'
-                  : 'bg-red-400 hover:bg-red-500'} transition-all active:scale-95 p-1 rounded-md text-white shadow"
+                  : 'bg-red-400 hover:bg-red-500 cursor-pointer'} border-none transition-all active:scale-95 p-1 rounded-md text-white shadow"
               >
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 512 512">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 block" viewBox="0 0 512 512">
                   <title>Arrow Back</title>
                   <path
                     fill="none"
@@ -35,9 +35,9 @@ export function ErrorOverlayHtml(errors: OverlayError[], selectedError: number) 
                 id="error-overlay-forward-button"
                 class="${selectedError === errors.length - 1
                   ? 'bg-red-200 cursor-not-allowed'
-                  : 'bg-red-400 hover:bg-red-500'} transition-all active:scale-95 p-1 rounded-md text-white shadow"
+                  : 'bg-red-400 hover:bg-red-500 cursor-pointer'} border-none transition-all active:scale-95 p-1 rounded-md text-white shadow"
               >
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 512 512">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 block" viewBox="0 0 512 512">
                   <title>Arrow Forward</title>
                   <path
                     fill="none"
@@ -54,9 +54,9 @@ export function ErrorOverlayHtml(errors: OverlayError[], selectedError: number) 
           </div>
           <button
             id="error-overlay-close-button"
-            class="absolute top-2 right-2 text-gray-600 hover:text-gray-800 transition-colors"
+            class="cursor-pointer absolute border-none bg-white top-2 right-2 text-gray-600 hover:text-gray-800 transition-colors"
           >
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 hidden sm:inline-block" viewBox="0 0 512 512">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 block hidden sm:inline-block" viewBox="0 0 512 512">
               <title>Close</title>
               <path
                 fill="none"

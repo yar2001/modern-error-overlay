@@ -1,7 +1,7 @@
 {
   "name": "modern-error-overlay",
   "author": "yar2001",
-  "version": "0.0.8",
+  "version": "0.0.11",
   "license": "MIT",
   "repository": {
     "url": "https://github.com/yar2001/modern-error-overlay"
@@ -38,6 +38,7 @@
     "vite-plugin-dts": "^1.2.1"
   },
   "dependencies": {
-    "rxjs": "^7.5.5"
+    "rxjs": "^7.5.5",
+    "vite-plugin-css-injected-by-js": "^1.5.1"
   }
 }

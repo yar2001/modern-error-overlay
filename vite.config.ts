@@ -1,6 +1,7 @@
 import { resolve } from 'path';
 import { defineConfig } from 'vite';
 import dts from 'vite-plugin-dts';
+import cssInjectedByJsPlugin from 'vite-plugin-css-injected-by-js'
 
 export default defineConfig({
   server: {
@@ -14,6 +15,7 @@ export default defineConfig({
     },
   },
   plugins: [
+    cssInjectedByJsPlugin(),
     dts(),
   ],
 });

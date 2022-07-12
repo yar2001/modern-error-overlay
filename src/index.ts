@@ -5,9 +5,16 @@ import './style.css';
 import { OverlayError } from './type';
 
 const errorOverlay = document.createElement('div');
-errorOverlay.id = 'error_overlay';
+errorOverlay.id = 'error-overlay';
 
-document.body.append(errorOverlay);
+// import { mockError } from './mock';
+
+window.onload = function () {
+  document.body.append(errorOverlay);
+  // addErrorToOverlay(mockError);
+  // addErrorToOverlay(mockError);
+  // addErrorToOverlay(mockError);
+};
 
 const command$ = new Subject<'open' | 'close' | 'refresh'>();
 
@@ -73,8 +80,3 @@ command$.pipe(filter((v) => v === 'close')).subscribe(() => {
     }),
   );
 });
-
-// import { mockError } from './mock';
-// addErrorToOverlay(mockError);
-// addErrorToOverlay(mockError);
-// addErrorToOverlay(mockError);
