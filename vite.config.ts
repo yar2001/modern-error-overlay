@@ -1,5 +1,6 @@
+import { resolve } from 'path';
 import { defineConfig } from 'vite';
-import path from 'path';
+import dts from 'vite-plugin-dts';
 
 export default defineConfig({
   server: {
@@ -7,9 +8,12 @@ export default defineConfig({
   },
   build: {
     lib: {
-      entry: path.resolve(__dirname, 'src/main.ts'),
+      entry: resolve(__dirname, 'src/main.ts'),
       name: 'modern-error-overlay',
       fileName: (format) => `index.${format}.js`,
     },
   },
+  plugins: [
+    dts(),
+  ],
 });
