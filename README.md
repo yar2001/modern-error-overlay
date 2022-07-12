@@ -6,10 +6,10 @@ Add a beautiful, modern error overlay to your dev library.
 
 ## Example
 
-Import the library and use `addError` to add Error.
+Import the library and use `addErrorToOverlay` to add Error.
 
 ```js
-import * as MEO from 'modern-error-overlay'
+import { addErrorToOverlay } from 'modern-error-overlay'
 
-MEO.addError({...});
+addErrorToOverlay({...});
 ```
