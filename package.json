@@ -1,9 +1,11 @@
 {
   "name": "modern-error-overlay",
   "author": "yar2001",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "license": "MIT",
-  "repository": "https://github.com/yar2001/modern-error-overlay",
+  "repository": {
+    "url": "https://github.com/yar2001/modern-error-overlay"
+  },
   "files": [
     "dist"
   ],
@@ -16,10 +18,15 @@
       "require": "./dist/my-lib.umd.js"
     }
   },
+  "keywords": [
+    "error",
+    "error-overlay"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "publish": "pnpm build && npm publish"
   },
   "devDependencies": {
     "@types/node": "^18.0.3",
