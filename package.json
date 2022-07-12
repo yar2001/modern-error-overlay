@@ -1,7 +1,7 @@
 {
   "name": "modern-error-overlay",
   "author": "yar2001",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "license": "MIT",
   "repository": {
     "url": "https://github.com/yar2001/modern-error-overlay"
@@ -26,7 +26,7 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "publish": "pnpm build && npm publish"
+    "pub": "pnpm build && npm publish"
   },
   "devDependencies": {
     "@types/node": "^18.0.3",
