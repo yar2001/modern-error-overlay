@@ -1,6 +1,6 @@
 import { OverlayError } from '../type';
 import OpenIconSvg from '../open-outline.svg';
-import { escapeHtml, html } from '../util';
+import { html } from '../util';
 
 export function ErrorOverlayHtml(errors: OverlayError[], selectedError: number) {
   const { title, message, path, codeFrame, stack } = errors[selectedError];
@@ -69,11 +69,11 @@ export function ErrorOverlayHtml(errors: OverlayError[], selectedError: number) 
             </svg>
           </button>
           <div>
-            <h1 class="text-2xl sm:text-3xl font-semibold text-gray-700">${title}</h1>
+            <h1 class="my-0 text-2xl sm:text-3xl font-semibold text-gray-700">${title}</h1>
             <div class="text-red-400 font-semibold text-sm sm:text-lg">${message}</div>
           </div>
           <div class="space-y-1">
-            <h2 class="text-base sm:text-2xl text-gray-700">Source</h2>
+            <h2 class="my-0 text-base sm:text-2xl text-gray-700">Source</h2>
             <a
               class="text-gray-500 text-sm sm:text-lg hover:underline flex flex-wrap justify-between items-center gap-2"
               href="vscode://file${path}"
@@ -81,12 +81,10 @@ export function ErrorOverlayHtml(errors: OverlayError[], selectedError: number) 
               ${path}
               <img class="h-5 w-5 hidden sm:inline-block" src="${OpenIconSvg}" />
             </a>
-            <pre class="p-3 text-sm sm:text-base rounded-md bg-gray-900 text-white overflow-x-auto">
-${escapeHtml(codeFrame)}</pre
-            >
+            <pre class="p-3 text-sm sm:text-base rounded-md bg-gray-900 text-white overflow-x-auto">${codeFrame}</pre>
           </div>
           <div class="space-y-1">
-            <h2 class="text-base sm:text-2xl text-gray-700">Call Stack</h2>
+            <h2 class="my-0 text-base sm:text-2xl text-gray-700">Call Stack</h2>
             <div class="space-y-2">
               ${stack.replace(
                 /(.+)\n(.+)\n/g,

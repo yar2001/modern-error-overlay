@@ -1,17 +1,18 @@
-import { addErrorToOverlay } from ".";
+import { addErrorToOverlay } from '.';
+import { escapeHtml } from './util';
 
 const mockError = {
   title: 'Unhandled Runtime Error',
   message: 'TypeError: console.lo is not a function',
   path: '/Users/bytedance/code/yari-playground/my-next-app/pages/about.tsx:4:2',
-  codeFrame: `  10 | <button onClick={()=>{
+  codeFrame: escapeHtml(`  10 | <button onClick={()=>{
   11 |     //@ts-expect-error
 > 12 |     console.lo()
      |            ^
   13 | }}>
   14 |     click to throw new Error
-  15 | </button>`,
-  stack: `HTMLUnknownElement.callCallback
+  15 | </button>`),
+  stack: escapeHtml(`HTMLUnknownElement.callCallback
   node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (4164:0)
   Object.invokeGuardedCallbackDev
   node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (4213:0)
@@ -41,7 +42,7 @@ const mockError = {
   node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (6457:0)
   dispatchDiscreteEvent
   node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (6430:0)
-  `,
+  `),
 };
 
 export function mockOverlay() {

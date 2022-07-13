@@ -1,13 +1,13 @@
 import { filter, fromEvent, merge, Subject, Subscription } from 'rxjs';
 import { ErrorOverlayHtml } from './components/overlay';
 import { ErrorStatusHtml } from './components/status';
-// import { mockOverlay } from './mock';
 import './style.css';
 import { OverlayError } from './type';
 
 const errorOverlay = document.createElement('div');
 errorOverlay.id = 'error-overlay';
 
+// import { mockOverlay } from './mock';
 window.onload = function () {
   document.body.append(errorOverlay);
   // mockOverlay();
