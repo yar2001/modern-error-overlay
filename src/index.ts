@@ -1,24 +1,21 @@
 import { filter, fromEvent, merge, Subject, Subscription } from 'rxjs';
-import { ErrorStatusHtml } from './components/status';
 import { ErrorOverlayHtml } from './components/overlay';
+import { ErrorStatusHtml } from './components/status';
+// import { mockOverlay } from './mock';
 import './style.css';
 import { OverlayError } from './type';
 
 const errorOverlay = document.createElement('div');
 errorOverlay.id = 'error-overlay';
 
-// import { mockError } from './mock';
-
 window.onload = function () {
   document.body.append(errorOverlay);
-  // addErrorToOverlay(mockError);
-  // addErrorToOverlay(mockError);
-  // addErrorToOverlay(mockError);
+  // mockOverlay();
 };
 
 const command$ = new Subject<'open' | 'close' | 'refresh'>();
 
-const errors: OverlayError[] = [];
+let errors: OverlayError[] = [];
 let isOpen = false;
 let selectedError = 0;
 
@@ -32,6 +29,13 @@ export function addErrorToOverlay(err: OverlayError) {
   } else {
     command$.next('close');
   }
+}
+
+export function resetErrorOverlay() {
+  errors = [];
+  isOpen = false;
+  selectedError = 0;
+  errorOverlay.innerHTML = '';
 }
 
 let clickSubscriptions: Subscription[] = [];
