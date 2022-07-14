@@ -5,9 +5,11 @@ import { html } from '../util';
 export function ErrorOverlayHtml(errors: OverlayError[], selectedError: number) {
   const { title, message, path, codeFrame, stack } = errors[selectedError];
   return html`
-    <div class="fixed inset-0 z-[9000] pt-[10vh] px-4">
+    <div class="fixed inset-0 z-[9000] pt-[10vh] px-4 box-border">
       <div id="error-overlay-background" class="bg-gray-600 bg-opacity-10 inset-0 fixed -z-10 backdrop-blur"></div>
-      <div class="shadow-xl rounded-lg overflow-hidden bg-white border-t-4 border-red-400 max-w-4xl mx-auto">
+      <div
+        class="shadow-xl rounded-lg overflow-hidden border-solid border-0 bg-white border-t-4 border-red-400 max-w-4xl mx-auto"
+      >
         <div
           class="relative px-5 py-3 sm:px-7 sm:py-5 space-y-3 overflow-y-auto overflow-x-hidden break-words h-[700px]"
         >
@@ -86,7 +88,7 @@ export function ErrorOverlayHtml(errors: OverlayError[], selectedError: number) 
           <div class="space-y-1">
             <h2 class="my-0 text-base sm:text-2xl text-gray-700">Call Stack</h2>
             <div class="space-y-2">
-              ${stack.replace(
+              ${(stack + '\n').replace(
                 /(.+)\n(.+)\n/g,
                 html`<div class="text-base sm:text-lg text-stone-500">
                   $1
