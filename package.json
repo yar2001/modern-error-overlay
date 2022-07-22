@@ -28,7 +28,8 @@
     "test": "vitest",
     "coverage": "vitest run --coverage",
     "preview": "vite preview",
-    "pub": "pnpm build && npm publish"
+    "pub": "pnpm build && npm publish",
+    "ci": "rm -rf **/node_modules && pnpm install"
   },
   "devDependencies": {
     "@testing-library/dom": "^8.16.0",
