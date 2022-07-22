@@ -1,7 +1,7 @@
 import { resolve } from 'path';
 import { defineConfig } from 'vite';
+import cssInjectedByJsPlugin from 'vite-plugin-css-injected-by-js';
 import dts from 'vite-plugin-dts';
-import cssInjectedByJsPlugin from 'vite-plugin-css-injected-by-js'
 
 export default defineConfig({
   server: {
@@ -14,8 +14,8 @@ export default defineConfig({
       fileName: (format) => `index.${format}.js`,
     },
   },
-  plugins: [
-    cssInjectedByJsPlugin(),
-    dts(),
-  ],
+  plugins: [cssInjectedByJsPlugin(), dts()],
+  test: {
+    environment: 'jsdom',
+  },
 });

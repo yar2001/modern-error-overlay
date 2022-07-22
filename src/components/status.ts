@@ -7,13 +7,9 @@ export function ErrorStatusHtml(errorNum: number) {
   return html`
     <button
       id="error-overlay-open-button"
-      class="cursor-pointer border-none fixed bottom-4 left-4 z-[9000] py-2 pl-4 pr-5 bg-red-400 active:bg-red-500 shadow-xl text-white rounded-lg hover:scale-110 transition-all flex items-center space-x-1"
+      class="cursor-pointer border-none fixed bottom-4 left-4 z-[9000] py-2 pl-4 pr-5 bg-red-400 active:bg-red-500 shadow-xl text-white rounded-lg hover:scale-110 transition-all flex items-center space-x-1 text-base"
     >
-      <svg
-        class="w-7 h-7 fill-white inline-block"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 512 512"
-      >
+      <svg class="w-7 h-7 fill-white inline-block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
         <title>Alert Circle</title>
         <path
           d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192 192-86 192-192z"

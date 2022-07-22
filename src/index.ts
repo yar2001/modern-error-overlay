@@ -7,17 +7,23 @@ import { OverlayError } from './type';
 const errorOverlay = document.createElement('div');
 errorOverlay.id = 'error-overlay';
 
-// import { mockOverlay } from './mock';
-window.onload = function () {
-  document.body.append(errorOverlay);
-  // mockOverlay();
-};
-
 const command$ = new Subject<'open' | 'close' | 'refresh'>();
 
 let errors: OverlayError[] = [];
 let isOpen = false;
 let selectedError = 0;
+let isLoadOverlay = false;
+
+function checkLoadOverlay() {
+  if (isLoadOverlay) return;
+  document.body.append(errorOverlay);
+}
+
+// import { mockOverlay } from './mock';
+window.onload = function () {
+  checkLoadOverlay();
+  // mockOverlay();
+};
 
 export function addErrorToOverlay(err: OverlayError) {
   errors.push(err);
@@ -41,6 +47,7 @@ export function resetErrorOverlay() {
 let clickSubscriptions: Subscription[] = [];
 
 command$.pipe(filter((v) => v === 'open')).subscribe(() => {
+  checkLoadOverlay();
   isOpen = true;
   errorOverlay.innerHTML = ErrorOverlayHtml(errors, selectedError);
 
@@ -66,11 +73,12 @@ command$.pipe(filter((v) => v === 'open')).subscribe(() => {
         selectedError++;
         command$.next('open');
       }
-    }),
+    })
   );
 });
 
 command$.pipe(filter((v) => v === 'close')).subscribe(() => {
+  checkLoadOverlay();
   isOpen = false;
   errorOverlay.innerHTML = ErrorStatusHtml(errors.length);
 
@@ -81,6 +89,6 @@ command$.pipe(filter((v) => v === 'close')).subscribe(() => {
   clickSubscriptions.push(
     fromEvent(openButton, 'click').subscribe(() => {
       command$.next('open');
-    }),
+    })
   );
 });

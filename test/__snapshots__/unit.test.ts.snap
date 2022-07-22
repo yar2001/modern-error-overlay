@@ -1,0 +1,294 @@
+// Vitest Snapshot v1
+
+exports[`ErrorOverlayHtml > should work as expected 1`] = `
+"
+    <div class=\\"fixed inset-0 z-[9000] pt-[10vh] px-4 box-border\\">
+      <div id=\\"error-overlay-background\\" class=\\"bg-gray-600 bg-opacity-10 inset-0 fixed -z-10 backdrop-blur\\"></div>
+      <div
+        class=\\"shadow-xl rounded-lg overflow-hidden border-solid border-0 bg-white border-t-4 border-red-400 max-w-4xl mx-auto \\"
+      >
+        <div
+          class=\\"relative px-5 py-3 sm:px-7 sm:py-5 space-y-3 overflow-y-auto overflow-x-hidden break-words max-h-[75vh] h-max\\"
+        >
+          <div class=\\"flex items-center gap-2\\">
+            <div class=\\"space-x-0.5\\">
+              <button
+                id=\\"error-overlay-back-button\\"
+                class=\\"bg-red-400 hover:bg-red-500 cursor-pointer border-none transition-all active:scale-95 p-1 rounded-md text-white shadow\\"
+              >
+                <svg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"h-5 w-5 block\\" viewBox=\\"0 0 512 512\\">
+                  <title>Arrow Back</title>
+                  <path
+                    fill=\\"none\\"
+                    stroke=\\"currentColor\\"
+                    stroke-linecap=\\"round\\"
+                    stroke-linejoin=\\"round\\"
+                    stroke-width=\\"48\\"
+                    d=\\"M244 400L100 256l144-144M120 256h292\\"
+                  />
+                </svg>
+              </button>
+              <button
+                id=\\"error-overlay-forward-button\\"
+                class=\\"bg-red-400 hover:bg-red-500 cursor-pointer border-none transition-all active:scale-95 p-1 rounded-md text-white shadow\\"
+              >
+                <svg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"h-5 w-5 block\\" viewBox=\\"0 0 512 512\\">
+                  <title>Arrow Forward</title>
+                  <path
+                    fill=\\"none\\"
+                    stroke=\\"currentColor\\"
+                    stroke-linecap=\\"round\\"
+                    stroke-linejoin=\\"round\\"
+                    stroke-width=\\"48\\"
+                    d=\\"M268 112l144 144-144 144M392 256H100\\"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div class=\\"text-slate-400\\">2 of 3 unhandled error</div>
+          </div>
+          <button
+            id=\\"error-overlay-close-button\\"
+            class=\\"cursor-pointer absolute border-none bg-white top-2 right-2 text-gray-600 hover:text-gray-800 transition-colors\\"
+          >
+            <svg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"h-7 w-7 block hidden sm:inline-block\\" viewBox=\\"0 0 512 512\\">
+              <title>Close</title>
+              <path
+                fill=\\"none\\"
+                stroke=\\"currentColor\\"
+                stroke-linecap=\\"round\\"
+                stroke-linejoin=\\"round\\"
+                stroke-width=\\"32\\"
+                d=\\"M368 368L144 144M368 144L144 368\\"
+              />
+            </svg>
+          </button>
+          <div>
+            <h1 class=\\"my-0 text-2xl sm:text-3xl font-semibold text-gray-700\\">Unhandled Runtime Error</h1>
+            <div class=\\"text-red-400 font-semibold text-sm sm:text-lg\\">TypeError: console.lo is not a function</div>
+          </div>
+          <div class=\\"space-y-1\\">
+            <h2 class=\\"my-0 text-base sm:text-2xl text-gray-700\\">Source</h2>
+            <a
+              class=\\"text-gray-500 text-sm sm:text-lg hover:underline flex flex-wrap justify-between items-center gap-2\\"
+              href=\\"vscode://file/Users/bytedance/code/yari-playground/my-next-app/pages/about.tsx:4:2\\"
+            >
+              /Users/bytedance/code/yari-playground/my-next-app/pages/about.tsx:4:2
+              <img class=\\"h-5 w-5 hidden sm:inline-block\\" src=\\"/src/open-outline.svg\\" />
+            </a>
+            <pre class=\\"p-3 text-sm sm:text-base rounded-md bg-gray-900 text-white overflow-x-auto\\">  10 | &lt;button onClick={()=&gt;{
+  11 |     //@ts-expect-error
+&gt; 12 |     console.lo()
+     |            ^
+  13 | }}&gt;
+  14 |     click to throw new Error
+  15 | &lt;/button&gt;</pre>
+          </div>
+          <div class=\\"space-y-1\\">
+            <h2 class=\\"my-0 text-base sm:text-2xl text-gray-700\\">Call Stack</h2>
+            <div class=\\"space-y-2\\">
+              <div class=\\"text-base sm:text-lg text-stone-500\\">
+                  HTMLUnknownElement.callCallback
+                  <div class=\\"text-xs sm:text-sm text-stone-400 ml-4\\">  node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (4164:0)</div>
+                </div><div class=\\"text-base sm:text-lg text-stone-500\\">
+                    Object.invokeGuardedCallbackDev
+                  <div class=\\"text-xs sm:text-sm text-stone-400 ml-4\\">  node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (4213:0)</div>
+                </div><div class=\\"text-base sm:text-lg text-stone-500\\">
+                    invokeGuardedCallback
+                  <div class=\\"text-xs sm:text-sm text-stone-400 ml-4\\">  node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (4277:0)</div>
+                </div><div class=\\"text-base sm:text-lg text-stone-500\\">
+                    invokeGuardedCallbackAndCatchFirstError
+                  <div class=\\"text-xs sm:text-sm text-stone-400 ml-4\\">  node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (4291:0)</div>
+                </div><div class=\\"text-base sm:text-lg text-stone-500\\">
+                    executeDispatch
+                  <div class=\\"text-xs sm:text-sm text-stone-400 ml-4\\">  node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (9041:0)</div>
+                </div><div class=\\"text-base sm:text-lg text-stone-500\\">
+                    processDispatchQueueItemsInOrder
+                  <div class=\\"text-xs sm:text-sm text-stone-400 ml-4\\">  node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (9073:0)</div>
+                </div><div class=\\"text-base sm:text-lg text-stone-500\\">
+                    processDispatchQueue
+                  <div class=\\"text-xs sm:text-sm text-stone-400 ml-4\\">  node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (9086:0)</div>
+                </div><div class=\\"text-base sm:text-lg text-stone-500\\">
+                    dispatchEventsForPlugins
+                  <div class=\\"text-xs sm:text-sm text-stone-400 ml-4\\">  node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (9097:0)</div>
+                </div><div class=\\"text-base sm:text-lg text-stone-500\\">
+                    eval
+                  <div class=\\"text-xs sm:text-sm text-stone-400 ml-4\\">  node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (9288:0)</div>
+                </div><div class=\\"text-base sm:text-lg text-stone-500\\">
+                    batchedUpdates$1
+                  <div class=\\"text-xs sm:text-sm text-stone-400 ml-4\\">  node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (26140:0)</div>
+                </div><div class=\\"text-base sm:text-lg text-stone-500\\">
+                    batchedUpdates
+                  <div class=\\"text-xs sm:text-sm text-stone-400 ml-4\\">  node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (3991:0)</div>
+                </div><div class=\\"text-base sm:text-lg text-stone-500\\">
+                    dispatchEventForPluginEventSystem
+                  <div class=\\"text-xs sm:text-sm text-stone-400 ml-4\\">  node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (9287:0)</div>
+                </div><div class=\\"text-base sm:text-lg text-stone-500\\">
+                    dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay
+                  <div class=\\"text-xs sm:text-sm text-stone-400 ml-4\\">  node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (6465:0)</div>
+                </div><div class=\\"text-base sm:text-lg text-stone-500\\">
+                    dispatchEvent
+                  <div class=\\"text-xs sm:text-sm text-stone-400 ml-4\\">  node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (6457:0)</div>
+                </div><div class=\\"text-base sm:text-lg text-stone-500\\">
+                    dispatchDiscreteEvent
+                  <div class=\\"text-xs sm:text-sm text-stone-400 ml-4\\">  node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (6430:0)</div>
+                </div>  
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  "
+`;
+
+exports[`ErrorStatusHtml > should work as expected 1`] = `
+"
+    <button
+      id=\\"error-overlay-open-button\\"
+      class=\\"cursor-pointer border-none fixed bottom-4 left-4 z-[9000] py-2 pl-4 pr-5 bg-red-400 active:bg-red-500 shadow-xl text-white rounded-lg hover:scale-110 transition-all flex items-center space-x-1 text-base\\"
+    >
+      <svg class=\\"w-7 h-7 fill-white inline-block\\" xmlns=\\"http://www.w3.org/2000/svg\\" viewBox=\\"0 0 512 512\\">
+        <title>Alert Circle</title>
+        <path
+          d=\\"M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192 192-86 192-192z\\"
+          fill=\\"none\\"
+          stroke=\\"currentColor\\"
+          stroke-miterlimit=\\"10\\"
+          stroke-width=\\"32\\"
+        />
+        <path
+          d=\\"M250.26 166.05L256 288l5.73-121.95a5.74 5.74 0 00-5.79-6h0a5.74 5.74 0 00-5.68 6z\\"
+          fill=\\"none\\"
+          stroke=\\"currentColor\\"
+          stroke-linecap=\\"round\\"
+          stroke-linejoin=\\"round\\"
+          stroke-width=\\"32\\"
+        />
+        <path d=\\"M256 367.91a20 20 0 1120-20 20 20 0 01-20 20z\\" />
+      </svg>
+      <div>Error 3</div>
+    </button>
+  "
+`;
+
+exports[`Library > mock should be available 1`] = `
+"
+    <div class=\\"fixed inset-0 z-[9000] pt-[10vh] px-4 box-border\\">
+      <div id=\\"error-overlay-background\\" class=\\"bg-gray-600 bg-opacity-10 inset-0 fixed -z-10 backdrop-blur\\"></div>
+      <div class=\\"shadow-xl rounded-lg overflow-hidden border-solid border-0 bg-white border-t-4 border-red-400 max-w-4xl mx-auto \\">
+        <div class=\\"relative px-5 py-3 sm:px-7 sm:py-5 space-y-3 overflow-y-auto overflow-x-hidden break-words max-h-[75vh] h-max\\">
+          <div class=\\"flex items-center gap-2\\">
+            <div class=\\"space-x-0.5\\">
+              <button id=\\"error-overlay-back-button\\" class=\\"bg-red-200 cursor-not-allowed border-none transition-all active:scale-95 p-1 rounded-md text-white shadow\\">
+                <svg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"h-5 w-5 block\\" viewBox=\\"0 0 512 512\\">
+                  <title>Arrow Back</title>
+                  <path fill=\\"none\\" stroke=\\"currentColor\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" stroke-width=\\"48\\" d=\\"M244 400L100 256l144-144M120 256h292\\"></path>
+                </svg>
+              </button>
+              <button id=\\"error-overlay-forward-button\\" class=\\"bg-red-400 hover:bg-red-500 cursor-pointer border-none transition-all active:scale-95 p-1 rounded-md text-white shadow\\">
+                <svg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"h-5 w-5 block\\" viewBox=\\"0 0 512 512\\">
+                  <title>Arrow Forward</title>
+                  <path fill=\\"none\\" stroke=\\"currentColor\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" stroke-width=\\"48\\" d=\\"M268 112l144 144-144 144M392 256H100\\"></path>
+                </svg>
+              </button>
+            </div>
+            <div class=\\"text-slate-400\\">1 of 3 unhandled error</div>
+          </div>
+          <button id=\\"error-overlay-close-button\\" class=\\"cursor-pointer absolute border-none bg-white top-2 right-2 text-gray-600 hover:text-gray-800 transition-colors\\">
+            <svg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"h-7 w-7 block hidden sm:inline-block\\" viewBox=\\"0 0 512 512\\">
+              <title>Close</title>
+              <path fill=\\"none\\" stroke=\\"currentColor\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" stroke-width=\\"32\\" d=\\"M368 368L144 144M368 144L144 368\\"></path>
+            </svg>
+          </button>
+          <div>
+            <h1 class=\\"my-0 text-2xl sm:text-3xl font-semibold text-gray-700\\">Unhandled Runtime Error</h1>
+            <div class=\\"text-red-400 font-semibold text-sm sm:text-lg\\">TypeError: console.lo is not a function</div>
+          </div>
+          <div class=\\"space-y-1\\">
+            <h2 class=\\"my-0 text-base sm:text-2xl text-gray-700\\">Source</h2>
+            <a class=\\"text-gray-500 text-sm sm:text-lg hover:underline flex flex-wrap justify-between items-center gap-2\\" href=\\"vscode://file/Users/bytedance/code/yari-playground/my-next-app/pages/about.tsx:4:2\\">
+              /Users/bytedance/code/yari-playground/my-next-app/pages/about.tsx:4:2
+              <img class=\\"h-5 w-5 hidden sm:inline-block\\" src=\\"/src/open-outline.svg\\">
+            </a>
+            <pre class=\\"p-3 text-sm sm:text-base rounded-md bg-gray-900 text-white overflow-x-auto\\">  10 | &lt;button onClick={()=&gt;{
+  11 |     //@ts-expect-error
+&gt; 12 |     console.lo()
+     |            ^
+  13 | }}&gt;
+  14 |     click to throw new Error
+  15 | &lt;/button&gt;</pre>
+          </div>
+          <div class=\\"space-y-1\\">
+            <h2 class=\\"my-0 text-base sm:text-2xl text-gray-700\\">Call Stack</h2>
+            <div class=\\"space-y-2\\">
+              <div class=\\"text-base sm:text-lg text-stone-500\\">
+                  HTMLUnknownElement.callCallback
+                  <div class=\\"text-xs sm:text-sm text-stone-400 ml-4\\">  node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (4164:0)</div>
+                </div><div class=\\"text-base sm:text-lg text-stone-500\\">
+                    Object.invokeGuardedCallbackDev
+                  <div class=\\"text-xs sm:text-sm text-stone-400 ml-4\\">  node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (4213:0)</div>
+                </div><div class=\\"text-base sm:text-lg text-stone-500\\">
+                    invokeGuardedCallback
+                  <div class=\\"text-xs sm:text-sm text-stone-400 ml-4\\">  node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (4277:0)</div>
+                </div><div class=\\"text-base sm:text-lg text-stone-500\\">
+                    invokeGuardedCallbackAndCatchFirstError
+                  <div class=\\"text-xs sm:text-sm text-stone-400 ml-4\\">  node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (4291:0)</div>
+                </div><div class=\\"text-base sm:text-lg text-stone-500\\">
+                    executeDispatch
+                  <div class=\\"text-xs sm:text-sm text-stone-400 ml-4\\">  node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (9041:0)</div>
+                </div><div class=\\"text-base sm:text-lg text-stone-500\\">
+                    processDispatchQueueItemsInOrder
+                  <div class=\\"text-xs sm:text-sm text-stone-400 ml-4\\">  node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (9073:0)</div>
+                </div><div class=\\"text-base sm:text-lg text-stone-500\\">
+                    processDispatchQueue
+                  <div class=\\"text-xs sm:text-sm text-stone-400 ml-4\\">  node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (9086:0)</div>
+                </div><div class=\\"text-base sm:text-lg text-stone-500\\">
+                    dispatchEventsForPlugins
+                  <div class=\\"text-xs sm:text-sm text-stone-400 ml-4\\">  node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (9097:0)</div>
+                </div><div class=\\"text-base sm:text-lg text-stone-500\\">
+                    eval
+                  <div class=\\"text-xs sm:text-sm text-stone-400 ml-4\\">  node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (9288:0)</div>
+                </div><div class=\\"text-base sm:text-lg text-stone-500\\">
+                    batchedUpdates$1
+                  <div class=\\"text-xs sm:text-sm text-stone-400 ml-4\\">  node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (26140:0)</div>
+                </div><div class=\\"text-base sm:text-lg text-stone-500\\">
+                    batchedUpdates
+                  <div class=\\"text-xs sm:text-sm text-stone-400 ml-4\\">  node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (3991:0)</div>
+                </div><div class=\\"text-base sm:text-lg text-stone-500\\">
+                    dispatchEventForPluginEventSystem
+                  <div class=\\"text-xs sm:text-sm text-stone-400 ml-4\\">  node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (9287:0)</div>
+                </div><div class=\\"text-base sm:text-lg text-stone-500\\">
+                    dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay
+                  <div class=\\"text-xs sm:text-sm text-stone-400 ml-4\\">  node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (6465:0)</div>
+                </div><div class=\\"text-base sm:text-lg text-stone-500\\">
+                    dispatchEvent
+                  <div class=\\"text-xs sm:text-sm text-stone-400 ml-4\\">  node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (6457:0)</div>
+                </div><div class=\\"text-base sm:text-lg text-stone-500\\">
+                    dispatchDiscreteEvent
+                  <div class=\\"text-xs sm:text-sm text-stone-400 ml-4\\">  node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (6430:0)</div>
+                </div>  
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  "
+`;
+
+exports[`Library > mock should be available 2`] = `""`;
+
+exports[`Library > should work as expected 1`] = `
+"
+    <button id=\\"error-overlay-open-button\\" class=\\"cursor-pointer border-none fixed bottom-4 left-4 z-[9000] py-2 pl-4 pr-5 bg-red-400 active:bg-red-500 shadow-xl text-white rounded-lg hover:scale-110 transition-all flex items-center space-x-1 text-base\\">
+      <svg class=\\"w-7 h-7 fill-white inline-block\\" xmlns=\\"http://www.w3.org/2000/svg\\" viewBox=\\"0 0 512 512\\">
+        <title>Alert Circle</title>
+        <path d=\\"M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192 192-86 192-192z\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-miterlimit=\\"10\\" stroke-width=\\"32\\"></path>
+        <path d=\\"M250.26 166.05L256 288l5.73-121.95a5.74 5.74 0 00-5.79-6h0a5.74 5.74 0 00-5.68 6z\\" fill=\\"none\\" stroke=\\"currentColor\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" stroke-width=\\"32\\"></path>
+        <path d=\\"M256 367.91a20 20 0 1120-20 20 20 0 01-20 20z\\"></path>
+      </svg>
+      <div>Error 1</div>
+    </button>
+  "
+`;

@@ -8,10 +8,10 @@ export function ErrorOverlayHtml(errors: OverlayError[], selectedError: number) 
     <div class="fixed inset-0 z-[9000] pt-[10vh] px-4 box-border">
       <div id="error-overlay-background" class="bg-gray-600 bg-opacity-10 inset-0 fixed -z-10 backdrop-blur"></div>
       <div
-        class="shadow-xl rounded-lg overflow-hidden border-solid border-0 bg-white border-t-4 border-red-400 max-w-4xl mx-auto"
+        class="shadow-xl rounded-lg overflow-hidden border-solid border-0 bg-white border-t-4 border-red-400 max-w-4xl mx-auto "
       >
         <div
-          class="relative px-5 py-3 sm:px-7 sm:py-5 space-y-3 overflow-y-auto overflow-x-hidden break-words h-[700px]"
+          class="relative px-5 py-3 sm:px-7 sm:py-5 space-y-3 overflow-y-auto overflow-x-hidden break-words max-h-[75vh] h-max"
         >
           <div class="flex items-center gap-2">
             <div class="space-x-0.5">
@@ -93,7 +93,7 @@ export function ErrorOverlayHtml(errors: OverlayError[], selectedError: number) 
                 html`<div class="text-base sm:text-lg text-stone-500">
                   $1
                   <div class="text-xs sm:text-sm text-stone-400 ml-4">$2</div>
-                </div>`,
+                </div>`
               )}
             </div>
           </div>

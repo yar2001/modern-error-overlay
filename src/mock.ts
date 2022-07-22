@@ -1,7 +1,7 @@
 import { addErrorToOverlay } from '.';
 import { escapeHtml } from './util';
 
-const mockError = {
+export const mockError = {
   title: 'Unhandled Runtime Error',
   message: 'TypeError: console.lo is not a function',
   path: '/Users/bytedance/code/yari-playground/my-next-app/pages/about.tsx:4:2',
