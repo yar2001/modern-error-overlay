@@ -1,5 +1,5 @@
-import { OverlayError } from '../type';
 import OpenIconSvg from '../open-outline.svg';
+import { OverlayError } from '../type';
 import { html } from '../util';
 
 export function ErrorOverlayHtml(errors: OverlayError[], selectedError: number) {
