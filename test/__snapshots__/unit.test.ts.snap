@@ -71,9 +71,9 @@ exports[`ErrorOverlayHtml > should work as expected 1`] = `
             <h2 class=\\"my-0 text-base sm:text-2xl text-gray-700\\">Source</h2>
             <a
               class=\\"text-gray-500 text-sm sm:text-lg hover:underline flex flex-wrap justify-between items-center gap-2\\"
-              href=\\"vscode://file/Users/bytedance/code/yari-playground/my-next-app/pages/about.tsx:4:2\\"
+              href=\\"vscode://file/Users/yar2001/code/yari-playground/my-next-app/pages/about.tsx:4:2\\"
             >
-              /Users/bytedance/code/yari-playground/my-next-app/pages/about.tsx:4:2
+              /Users/yar2001/code/yari-playground/my-next-app/pages/about.tsx:4:2
               <img class=\\"h-5 w-5 hidden sm:inline-block\\" src=\\"/src/open-outline.svg\\" />
             </a>
             <pre class=\\"p-3 text-sm sm:text-base rounded-md bg-gray-900 text-white overflow-x-auto\\">  10 | &lt;button onClick={()=&gt;{
@@ -207,8 +207,8 @@ exports[`Library > mock should be available 1`] = `
           </div>
           <div class=\\"space-y-1\\">
             <h2 class=\\"my-0 text-base sm:text-2xl text-gray-700\\">Source</h2>
-            <a class=\\"text-gray-500 text-sm sm:text-lg hover:underline flex flex-wrap justify-between items-center gap-2\\" href=\\"vscode://file/Users/bytedance/code/yari-playground/my-next-app/pages/about.tsx:4:2\\">
-              /Users/bytedance/code/yari-playground/my-next-app/pages/about.tsx:4:2
+            <a class=\\"text-gray-500 text-sm sm:text-lg hover:underline flex flex-wrap justify-between items-center gap-2\\" href=\\"vscode://file/Users/yar2001/code/yari-playground/my-next-app/pages/about.tsx:4:2\\">
+              /Users/yar2001/code/yari-playground/my-next-app/pages/about.tsx:4:2
               <img class=\\"h-5 w-5 hidden sm:inline-block\\" src=\\"/src/open-outline.svg\\">
             </a>
             <pre class=\\"p-3 text-sm sm:text-base rounded-md bg-gray-900 text-white overflow-x-auto\\">  10 | &lt;button onClick={()=&gt;{

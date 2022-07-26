@@ -4,7 +4,7 @@ import { escapeHtml } from './util';
 export const mockError = {
   title: 'Unhandled Runtime Error',
   message: 'TypeError: console.lo is not a function',
-  path: '/Users/bytedance/code/yari-playground/my-next-app/pages/about.tsx:4:2',
+  path: '/Users/yar2001/code/yari-playground/my-next-app/pages/about.tsx:4:2',
   codeFrame: escapeHtml(`  10 | <button onClick={()=>{
   11 |     //@ts-expect-error
 > 12 |     console.lo()
