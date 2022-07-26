@@ -2,7 +2,7 @@
 
 Add a beautiful, modern error overlay to your dev library.
 
-![preview](./preview.jpg)
+![preview](./preview.png)
 
 ## Example
 
