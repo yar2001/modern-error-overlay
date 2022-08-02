@@ -3,7 +3,7 @@ import { OverlayError } from '../type';
 import { html } from '../util';
 
 export function ErrorOverlayHtml(errors: OverlayError[], selectedError: number) {
-  const { title, message, path, codeFrame, stack } = errors[selectedError];
+  const { title, message, path, codeFrame, stack = '' } = errors[selectedError];
   return html`
     <div class="fixed inset-0 z-[9000] pt-[10vh] px-4 box-border">
       <div id="error-overlay-background" class="bg-gray-600 bg-opacity-10 inset-0 fixed -z-10 backdrop-blur"></div>
@@ -85,7 +85,8 @@ export function ErrorOverlayHtml(errors: OverlayError[], selectedError: number) 
             </a>
             <pre class="p-3 text-sm sm:text-base rounded-md bg-gray-900 text-white overflow-x-auto">${codeFrame}</pre>
           </div>
-          <div class="space-y-1">
+          ${stack &&
+          `<div class="space-y-1">
             <h2 class="my-0 text-base sm:text-2xl text-gray-700">Call Stack</h2>
             <div class="space-y-2">
               ${(stack + '\n').replace(
@@ -96,7 +97,7 @@ export function ErrorOverlayHtml(errors: OverlayError[], selectedError: number) 
                 </div>`
               )}
             </div>
-          </div>
+          </div>`}
         </div>
       </div>
     </div>

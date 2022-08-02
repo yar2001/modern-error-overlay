@@ -3,5 +3,5 @@ export interface OverlayError {
   message: string;
   path: string;
   codeFrame: string;
-  stack: string;
+  stack?: string;
 }
