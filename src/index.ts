@@ -19,10 +19,10 @@ function checkLoadOverlay() {
   document.body.append(errorOverlay);
 }
 
-// import { mockOverlay } from './mock';
+import { mockOverlay } from './mock';
 window.onload = function () {
   checkLoadOverlay();
-  // mockOverlay();
+  mockOverlay();
 };
 
 export function addErrorToOverlay(err: OverlayError) {

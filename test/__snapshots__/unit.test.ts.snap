@@ -51,7 +51,7 @@ exports[`ErrorOverlayHtml > should work as expected 1`] = `
             id=\\"error-overlay-close-button\\"
             class=\\"cursor-pointer absolute border-none bg-white top-2 right-2 text-gray-600 hover:text-gray-800 transition-colors\\"
           >
-            <svg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"h-7 w-7 block hidden sm:inline-block\\" viewBox=\\"0 0 512 512\\">
+            <svg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"h-7 w-7 block sm:inline-block\\" viewBox=\\"0 0 512 512\\">
               <title>Close</title>
               <path
                 fill=\\"none\\"
@@ -64,7 +64,7 @@ exports[`ErrorOverlayHtml > should work as expected 1`] = `
             </svg>
           </button>
           <div>
-            <h1 class=\\"my-0 text-2xl sm:text-3xl font-semibold text-gray-700\\">Unhandled Runtime Error</h1>
+            <h1 class=\\"my-0 text-2xl sm:text-3xl font-semibold text-gray-700 text-left p-0\\">Unhandled Runtime Error</h1>
             <div class=\\"text-red-400 font-semibold text-sm sm:text-lg\\">TypeError: console.lo is not a function</div>
           </div>
           <div class=\\"space-y-1\\">
@@ -89,49 +89,49 @@ exports[`ErrorOverlayHtml > should work as expected 1`] = `
             <div class=\\"space-y-2\\">
               <div class=\\"text-base sm:text-lg text-stone-500\\">
                   HTMLUnknownElement.callCallback
-                  <div class=\\"text-xs sm:text-sm text-stone-400 ml-4\\">  node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (4164:0)</div>
+                  <a class=\\"text-xs sm:text-sm text-stone-400 ml-4 underline block\\" href=\\"vscode://filenode_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (4164:0)\\">node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (4164:0)</a>
                 </div><div class=\\"text-base sm:text-lg text-stone-500\\">
                     Object.invokeGuardedCallbackDev
-                  <div class=\\"text-xs sm:text-sm text-stone-400 ml-4\\">  node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (4213:0)</div>
+                  <a class=\\"text-xs sm:text-sm text-stone-400 ml-4 underline block\\" href=\\"vscode://filenode_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (4213:0)\\">node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (4213:0)</a>
                 </div><div class=\\"text-base sm:text-lg text-stone-500\\">
                     invokeGuardedCallback
-                  <div class=\\"text-xs sm:text-sm text-stone-400 ml-4\\">  node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (4277:0)</div>
+                  <a class=\\"text-xs sm:text-sm text-stone-400 ml-4 underline block\\" href=\\"vscode://filenode_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (4277:0)\\">node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (4277:0)</a>
                 </div><div class=\\"text-base sm:text-lg text-stone-500\\">
                     invokeGuardedCallbackAndCatchFirstError
-                  <div class=\\"text-xs sm:text-sm text-stone-400 ml-4\\">  node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (4291:0)</div>
+                  <a class=\\"text-xs sm:text-sm text-stone-400 ml-4 underline block\\" href=\\"vscode://filenode_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (4291:0)\\">node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (4291:0)</a>
                 </div><div class=\\"text-base sm:text-lg text-stone-500\\">
                     executeDispatch
-                  <div class=\\"text-xs sm:text-sm text-stone-400 ml-4\\">  node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (9041:0)</div>
+                  <a class=\\"text-xs sm:text-sm text-stone-400 ml-4 underline block\\" href=\\"vscode://filenode_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (9041:0)\\">node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (9041:0)</a>
                 </div><div class=\\"text-base sm:text-lg text-stone-500\\">
                     processDispatchQueueItemsInOrder
-                  <div class=\\"text-xs sm:text-sm text-stone-400 ml-4\\">  node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (9073:0)</div>
+                  <a class=\\"text-xs sm:text-sm text-stone-400 ml-4 underline block\\" href=\\"vscode://filenode_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (9073:0)\\">node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (9073:0)</a>
                 </div><div class=\\"text-base sm:text-lg text-stone-500\\">
                     processDispatchQueue
-                  <div class=\\"text-xs sm:text-sm text-stone-400 ml-4\\">  node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (9086:0)</div>
+                  <a class=\\"text-xs sm:text-sm text-stone-400 ml-4 underline block\\" href=\\"vscode://filenode_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (9086:0)\\">node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (9086:0)</a>
                 </div><div class=\\"text-base sm:text-lg text-stone-500\\">
                     dispatchEventsForPlugins
-                  <div class=\\"text-xs sm:text-sm text-stone-400 ml-4\\">  node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (9097:0)</div>
+                  <a class=\\"text-xs sm:text-sm text-stone-400 ml-4 underline block\\" href=\\"vscode://filenode_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (9097:0)\\">node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (9097:0)</a>
                 </div><div class=\\"text-base sm:text-lg text-stone-500\\">
                     eval
-                  <div class=\\"text-xs sm:text-sm text-stone-400 ml-4\\">  node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (9288:0)</div>
+                  <a class=\\"text-xs sm:text-sm text-stone-400 ml-4 underline block\\" href=\\"vscode://filenode_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (9288:0)\\">node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (9288:0)</a>
                 </div><div class=\\"text-base sm:text-lg text-stone-500\\">
                     batchedUpdates$1
-                  <div class=\\"text-xs sm:text-sm text-stone-400 ml-4\\">  node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (26140:0)</div>
+                  <a class=\\"text-xs sm:text-sm text-stone-400 ml-4 underline block\\" href=\\"vscode://filenode_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (26140:0)\\">node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (26140:0)</a>
                 </div><div class=\\"text-base sm:text-lg text-stone-500\\">
                     batchedUpdates
-                  <div class=\\"text-xs sm:text-sm text-stone-400 ml-4\\">  node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (3991:0)</div>
+                  <a class=\\"text-xs sm:text-sm text-stone-400 ml-4 underline block\\" href=\\"vscode://filenode_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (3991:0)\\">node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (3991:0)</a>
                 </div><div class=\\"text-base sm:text-lg text-stone-500\\">
                     dispatchEventForPluginEventSystem
-                  <div class=\\"text-xs sm:text-sm text-stone-400 ml-4\\">  node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (9287:0)</div>
+                  <a class=\\"text-xs sm:text-sm text-stone-400 ml-4 underline block\\" href=\\"vscode://filenode_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (9287:0)\\">node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (9287:0)</a>
                 </div><div class=\\"text-base sm:text-lg text-stone-500\\">
                     dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay
-                  <div class=\\"text-xs sm:text-sm text-stone-400 ml-4\\">  node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (6465:0)</div>
+                  <a class=\\"text-xs sm:text-sm text-stone-400 ml-4 underline block\\" href=\\"vscode://filenode_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (6465:0)\\">node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (6465:0)</a>
                 </div><div class=\\"text-base sm:text-lg text-stone-500\\">
                     dispatchEvent
-                  <div class=\\"text-xs sm:text-sm text-stone-400 ml-4\\">  node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (6457:0)</div>
+                  <a class=\\"text-xs sm:text-sm text-stone-400 ml-4 underline block\\" href=\\"vscode://filenode_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (6457:0)\\">node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (6457:0)</a>
                 </div><div class=\\"text-base sm:text-lg text-stone-500\\">
                     dispatchDiscreteEvent
-                  <div class=\\"text-xs sm:text-sm text-stone-400 ml-4\\">  node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (6430:0)</div>
+                  <a class=\\"text-xs sm:text-sm text-stone-400 ml-4 underline block\\" href=\\"vscode://filenode_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (6430:0)\\">node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (6430:0)</a>
                 </div>  
 
             </div>
@@ -196,13 +196,13 @@ exports[`Library > mock should be available 1`] = `
             <div class=\\"text-slate-400\\">1 of 3 unhandled error</div>
           </div>
           <button id=\\"error-overlay-close-button\\" class=\\"cursor-pointer absolute border-none bg-white top-2 right-2 text-gray-600 hover:text-gray-800 transition-colors\\">
-            <svg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"h-7 w-7 block hidden sm:inline-block\\" viewBox=\\"0 0 512 512\\">
+            <svg xmlns=\\"http://www.w3.org/2000/svg\\" class=\\"h-7 w-7 block sm:inline-block\\" viewBox=\\"0 0 512 512\\">
               <title>Close</title>
               <path fill=\\"none\\" stroke=\\"currentColor\\" stroke-linecap=\\"round\\" stroke-linejoin=\\"round\\" stroke-width=\\"32\\" d=\\"M368 368L144 144M368 144L144 368\\"></path>
             </svg>
           </button>
           <div>
-            <h1 class=\\"my-0 text-2xl sm:text-3xl font-semibold text-gray-700\\">Unhandled Runtime Error</h1>
+            <h1 class=\\"my-0 text-2xl sm:text-3xl font-semibold text-gray-700 text-left p-0\\">Unhandled Runtime Error</h1>
             <div class=\\"text-red-400 font-semibold text-sm sm:text-lg\\">TypeError: console.lo is not a function</div>
           </div>
           <div class=\\"space-y-1\\">
@@ -224,49 +224,49 @@ exports[`Library > mock should be available 1`] = `
             <div class=\\"space-y-2\\">
               <div class=\\"text-base sm:text-lg text-stone-500\\">
                   HTMLUnknownElement.callCallback
-                  <div class=\\"text-xs sm:text-sm text-stone-400 ml-4\\">  node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (4164:0)</div>
+                  <a class=\\"text-xs sm:text-sm text-stone-400 ml-4 underline block\\" href=\\"vscode://filenode_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (4164:0)\\">node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (4164:0)</a>
                 </div><div class=\\"text-base sm:text-lg text-stone-500\\">
                     Object.invokeGuardedCallbackDev
-                  <div class=\\"text-xs sm:text-sm text-stone-400 ml-4\\">  node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (4213:0)</div>
+                  <a class=\\"text-xs sm:text-sm text-stone-400 ml-4 underline block\\" href=\\"vscode://filenode_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (4213:0)\\">node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (4213:0)</a>
                 </div><div class=\\"text-base sm:text-lg text-stone-500\\">
                     invokeGuardedCallback
-                  <div class=\\"text-xs sm:text-sm text-stone-400 ml-4\\">  node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (4277:0)</div>
+                  <a class=\\"text-xs sm:text-sm text-stone-400 ml-4 underline block\\" href=\\"vscode://filenode_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (4277:0)\\">node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (4277:0)</a>
                 </div><div class=\\"text-base sm:text-lg text-stone-500\\">
                     invokeGuardedCallbackAndCatchFirstError
-                  <div class=\\"text-xs sm:text-sm text-stone-400 ml-4\\">  node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (4291:0)</div>
+                  <a class=\\"text-xs sm:text-sm text-stone-400 ml-4 underline block\\" href=\\"vscode://filenode_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (4291:0)\\">node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (4291:0)</a>
                 </div><div class=\\"text-base sm:text-lg text-stone-500\\">
                     executeDispatch
-                  <div class=\\"text-xs sm:text-sm text-stone-400 ml-4\\">  node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (9041:0)</div>
+                  <a class=\\"text-xs sm:text-sm text-stone-400 ml-4 underline block\\" href=\\"vscode://filenode_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (9041:0)\\">node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (9041:0)</a>
                 </div><div class=\\"text-base sm:text-lg text-stone-500\\">
                     processDispatchQueueItemsInOrder
-                  <div class=\\"text-xs sm:text-sm text-stone-400 ml-4\\">  node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (9073:0)</div>
+                  <a class=\\"text-xs sm:text-sm text-stone-400 ml-4 underline block\\" href=\\"vscode://filenode_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (9073:0)\\">node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (9073:0)</a>
                 </div><div class=\\"text-base sm:text-lg text-stone-500\\">
                     processDispatchQueue
-                  <div class=\\"text-xs sm:text-sm text-stone-400 ml-4\\">  node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (9086:0)</div>
+                  <a class=\\"text-xs sm:text-sm text-stone-400 ml-4 underline block\\" href=\\"vscode://filenode_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (9086:0)\\">node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (9086:0)</a>
                 </div><div class=\\"text-base sm:text-lg text-stone-500\\">
                     dispatchEventsForPlugins
-                  <div class=\\"text-xs sm:text-sm text-stone-400 ml-4\\">  node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (9097:0)</div>
+                  <a class=\\"text-xs sm:text-sm text-stone-400 ml-4 underline block\\" href=\\"vscode://filenode_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (9097:0)\\">node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (9097:0)</a>
                 </div><div class=\\"text-base sm:text-lg text-stone-500\\">
                     eval
-                  <div class=\\"text-xs sm:text-sm text-stone-400 ml-4\\">  node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (9288:0)</div>
+                  <a class=\\"text-xs sm:text-sm text-stone-400 ml-4 underline block\\" href=\\"vscode://filenode_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (9288:0)\\">node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (9288:0)</a>
                 </div><div class=\\"text-base sm:text-lg text-stone-500\\">
                     batchedUpdates$1
-                  <div class=\\"text-xs sm:text-sm text-stone-400 ml-4\\">  node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (26140:0)</div>
+                  <a class=\\"text-xs sm:text-sm text-stone-400 ml-4 underline block\\" href=\\"vscode://filenode_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (26140:0)\\">node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (26140:0)</a>
                 </div><div class=\\"text-base sm:text-lg text-stone-500\\">
                     batchedUpdates
-                  <div class=\\"text-xs sm:text-sm text-stone-400 ml-4\\">  node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (3991:0)</div>
+                  <a class=\\"text-xs sm:text-sm text-stone-400 ml-4 underline block\\" href=\\"vscode://filenode_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (3991:0)\\">node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (3991:0)</a>
                 </div><div class=\\"text-base sm:text-lg text-stone-500\\">
                     dispatchEventForPluginEventSystem
-                  <div class=\\"text-xs sm:text-sm text-stone-400 ml-4\\">  node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (9287:0)</div>
+                  <a class=\\"text-xs sm:text-sm text-stone-400 ml-4 underline block\\" href=\\"vscode://filenode_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (9287:0)\\">node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (9287:0)</a>
                 </div><div class=\\"text-base sm:text-lg text-stone-500\\">
                     dispatchEventWithEnableCapturePhaseSelectiveHydrationWithoutDiscreteEventReplay
-                  <div class=\\"text-xs sm:text-sm text-stone-400 ml-4\\">  node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (6465:0)</div>
+                  <a class=\\"text-xs sm:text-sm text-stone-400 ml-4 underline block\\" href=\\"vscode://filenode_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (6465:0)\\">node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (6465:0)</a>
                 </div><div class=\\"text-base sm:text-lg text-stone-500\\">
                     dispatchEvent
-                  <div class=\\"text-xs sm:text-sm text-stone-400 ml-4\\">  node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (6457:0)</div>
+                  <a class=\\"text-xs sm:text-sm text-stone-400 ml-4 underline block\\" href=\\"vscode://filenode_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (6457:0)\\">node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (6457:0)</a>
                 </div><div class=\\"text-base sm:text-lg text-stone-500\\">
                     dispatchDiscreteEvent
-                  <div class=\\"text-xs sm:text-sm text-stone-400 ml-4\\">  node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (6430:0)</div>
+                  <a class=\\"text-xs sm:text-sm text-stone-400 ml-4 underline block\\" href=\\"vscode://filenode_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (6430:0)\\">node_modules/.pnpm/react-dom@18.2.0_react@18.2.0/node_modules/react-dom/cjs/react-dom.development.js (6430:0)</a>
                 </div>  
 
             </div>

@@ -58,7 +58,7 @@ export function ErrorOverlayHtml(errors: OverlayError[], selectedError: number) 
             id="error-overlay-close-button"
             class="cursor-pointer absolute border-none bg-white top-2 right-2 text-gray-600 hover:text-gray-800 transition-colors"
           >
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 block hidden sm:inline-block" viewBox="0 0 512 512">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 block sm:inline-block" viewBox="0 0 512 512">
               <title>Close</title>
               <path
                 fill="none"
@@ -71,7 +71,7 @@ export function ErrorOverlayHtml(errors: OverlayError[], selectedError: number) 
             </svg>
           </button>
           <div>
-            <h1 class="my-0 text-2xl sm:text-3xl font-semibold text-gray-700">${title}</h1>
+            <h1 class="my-0 text-2xl sm:text-3xl font-semibold text-gray-700 text-left p-0">${title}</h1>
             <div class="text-red-400 font-semibold text-sm sm:text-lg">${message}</div>
           </div>
           <div class="space-y-1">
@@ -89,10 +89,10 @@ export function ErrorOverlayHtml(errors: OverlayError[], selectedError: number) 
             <h2 class="my-0 text-base sm:text-2xl text-gray-700">Call Stack</h2>
             <div class="space-y-2">
               ${(stack + '\n').replace(
-                /(.+)\n(.+)\n/g,
+                /(.+)\n\s*(.+)\n/g,
                 html`<div class="text-base sm:text-lg text-stone-500">
                   $1
-                  <div class="text-xs sm:text-sm text-stone-400 ml-4">$2</div>
+                  <a class="text-xs sm:text-sm text-stone-400 ml-4 underline block" href="vscode://file$2">$2</a>
                 </div>`
               )}
             </div>
